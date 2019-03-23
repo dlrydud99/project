@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="스터디 참가"
+        android:textAlignment="center"
+        android:textColor="@color/darker_gray"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/darker_gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/darker_gray"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="24dp"
+        android:text="스터디 이름"/>
+
+    <EditText
+        android:id="@+id/ip_study_name_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/darker_gray"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/darker_gray"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="24dp"
+        android:text="스터디원 이름"/>
+
+    <EditText
+        android:id="@+id/ip_name_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/darker_gray"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tv_cancel_enter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="@color/darker_gray"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/tv_enter"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="참가"
+            android:textColor="@color/darker_gray"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+</LinearLayout>
